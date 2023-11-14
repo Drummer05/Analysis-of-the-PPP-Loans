@@ -50,3 +50,51 @@ A tableau dashboard will be created with the goal to answer the following questi
 4. **Data Pipeline/ETL:** Use SQL for data cleaning, formatting, and transformation.
 5. **Data Loading:** Load the cleaned data into a data warehouse and create a SQL view or connect it directly to Tableau
 
+# Business Impact
+
+## Risks:
+- **Data Privacy and Security**: Handling sensitive financial data comes with the risk of data breaches. Ensuring robust security measures is crucial.
+- **Accuracy of Analysis**: Incorrect analysis due to data inconsistencies or errors could lead to misleading conclusions.
+- **Compliance and Legal Risks**: Ensuring the project complies with financial regulations and data protection laws (like GDPR in Europe or CCPA in California) is essential.
+
+## Costs:
+- **Data Acquisition and Storage**: Costs associated with accessing and storing large datasets, especially if cloud services are used.
+- **Analytical Tools and Resources**: Investment in analytical tools (like Tableau for visualization) and potentially in computational resources for data processing.
+- **Manpower**: Costs related to the team working on data analysis, including data scientists, analysts, and IT support.
+
+## Benefits:
+- **Insightful Business Decisions**: The analysis can provide valuable insights into loan distribution patterns, aiding in strategic decision-making for future financial programs.
+- **Policy Formulation**: Helps in assessing the effectiveness of the PPP loans, guiding policymakers in designing better economic support schemes.
+- **Academic and Research Value**: Contributes to academic research in economics, finance, and data science.
+
+## Estimated Impact:
+- **Baseline Scenario**: If the analysis aligns with expectations, it could lead to improved understanding and management of similar financial programs in the future.
+- **Optimistic Scenario**: In the best-case scenario, the project could significantly influence policy decisions, leading to more effective economic support mechanisms and potentially driving economic recovery.
+
+# Business Persona
+
+- **Policy Makers**: Government officials who can use the insights to shape future economic relief programs.
+- **Financial Analysts**: Professionals analyzing economic trends and impacts of government policies.
+- **Academic Researchers**: Scholars studying the economic impact of COVID-19 and government interventions.
+- **Data Scientists and Analysts**: Individuals directly involved in data processing, analysis, and visualization.
+- **Public and Media**: For transparency and public knowledge, especially in understanding how public funds were utilized.
+
+# Data
+
+## Data Sources:
+- **PPP Loan Data**: From [SBA.gov](https://data.sba.gov/dataset/ppp-foia), detailing loan amounts, borrower details, loan status, lender information, etc.
+- **NAICS Data**: From [Census.gov](https://www.census.gov/naics/), providing industry classifications of the businesses receiving loans.
+
+## Metadata:
+- Includes fields like Loan Number, Borrower Information, Loan Amount, Lender Details, and more, as previously detailed.
+
+## Dataset Size, Strengths, and Weaknesses:
+- **Size**: The dataset is extensive, covering a wide range of loans across various states and industries.
+- **Strengths**:
+  - Comprehensive coverage of PPP loans.
+  - Detailed information enabling multifaceted analysis.
+- **Weaknesses**:
+  - Potential gaps or inaccuracies in self-reported data.
+  - The large size of the dataset may require significant computational resources for analysis.
+  - Historical data may not fully predict future trends, especially in unprecedented scenarios like a pandemic.
+
