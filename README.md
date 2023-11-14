@@ -88,4 +88,15 @@ A tableau dashboard will be created with the goal to answer the following questi
   - Potential gaps or inaccuracies in self-reported data.
   - The large size of the dataset may require significant computational resources for analysis.
   - Historical data may not fully predict future trends, especially in unprecedented scenarios like a pandemic.
+ 
+## Project Components
 
+### Data Sourcing
+- The data utilized in this project is sourced from the wbesite: [Paycheck Protection Program (PPP) Data](https://data.sba.gov/dataset/ppp-foia)
+- [North American Industry Classification System (NAICS)](https://www.census.gov/naics/)
+- The datasets were sourced using a Web Scrapping with Python. The code is provided in the [Data Ingestion Python file](/Scripts/Data%20ingestion%20Eco%20health%20Alliance.py) in the Scripts folder. 
+- For a comprehensive understanding of the data fields used in this project, please refer to our [Data Dictionary](https://docs.google.com/spreadsheets/d/1Ejue9j_eugdCveuAJLtt5zJkvG5ZTkmlw0nsC3r_hqA/edit#gid=1974515149). This dictionary provides detailed descriptions of each field, ensuring clarity and consistency in data interpretation. You can also get the dictionary in the dictionary file in this repository
+
+### Data Storage
+- The data for this project is stored on Azure, ensuring secure and reliable access. You can find the data in our Azure storage container through the following link: [Azure Storage - Health Alliance Data](https://portal.azure.com/#view/Microsoft_Azure_Storage/ContainerMenuBlade/~/overview/storageAccountId/%2Fsubscriptions%2Ffb36820a-997c-4308-8686-5b46f22b0328%2FresourceGroups%2Fppp%2Fproviders%2FMicrosoft.Storage%2FstorageAccounts%2Fstcis4400projects/path/pppdata/etag/%220x8DBDED1E19A4458%22/defaultEncryptionScope/%24account-encryption-key/denyEncryptionScopeOverride~/false/defaultId//publicAccessVal/None).
+- Updated scripts for data ingestion are available in the [Data Ingestion Python file](/Scripts/Data%20ingestion%20Eco%20health%20Alliance.py) in the Scripts folder.
