@@ -1,12 +1,28 @@
 # Project 6: Analysis of the PPP Loans Issued to Small Businesses During COVID-19
 
+## Table of Contents
+1. [Introduction](#introduction)
+2. [Background](#background)
+3. [Business Problem](#business-problem)
+4. [Stakeholders](#stakeholders)
+5. [About the Dataset](#about-the-dataset)
+6. [Tools](#tools)
+7. [Analysis Questions](#analysis-questions)
+8. [Project Requirements](#project-requirements)
+9. [Business Impact](#business-impact)
+10. [Business Persona](#business-persona)
+11. [Dataset Size, Strengths, and Weaknesses](#dataset-size-strengths-and-weaknesses)
+12. [ETL](#etl)
+    - [Data Extraction / Storage](#data-extraction--storage)
+    - [Data Transformation](#data-transformation)
+    - [Data Loading](#data-loading)
+    - [Tableau Dashboard](#tableau-dashboard)
+
 ## Introduction
 
-This Group Project is a comprehensive exercise in building a data warehouse and creating a robust data architecture. It encompasses the entire journey of data from sourcing to visualization, integrating aspects of data collection, storage, transformation, and presentation. This project requires both technical skills in handling and processing data and an understanding of effective data structuring (data architecture) and meaningful data presentation (data visualization). The goal is to develop a data pipleine following the architecture bellow. We looked at the PPP Loans Data
-
+This Group Project is a comprehensive exercise in building a data warehouse and creating a robust data architecture. It encompasses the entire journey of data from sourcing to visualization, integrating aspects of data collection, storage, transformation, and presentation. This project requires both technical skills in handling and processing data and an understanding of effective data structuring (data architecture) and meaningful data presentation (data visualization). The goal is to develop a data pipeline following the architecture below. We looked at the PPP Loans Data.
 
 ![ppp loans](https://github.com/Drummer05/Analysis-of-the-PPP-Loans/assets/144565034/9eb6580d-b9d4-48ec-b3dc-0202d1e84c69)
-
 
 ### Background
 
@@ -31,22 +47,23 @@ If you want to access the source of the data for this project, please click on t
 - [Paycheck Protection Program (PPP) Data](https://data.sba.gov/dataset/ppp-foia)
 - [North American Industry Classification System (NAICS)](https://www.census.gov/naics/)
 
-- For a comprehensive understanding of the data fields used in this project, please refer to our [2022 NAICS Title](https://docs.google.com/spreadsheets/d/1Ejue9j_eugdCveuAJLtt5zJkvG5ZTkmlw0nsC3r_hqA/edit#gid=1974515149). This dictionary provides detailed descriptions of each field, ensuring clarity and consistency in data interpretation. You can also get the dictionary in the dictionary file in this repository
+For a comprehensive understanding of the data fields used in this project, please refer to our [2022 NAICS Title](https://docs.google.com/spreadsheets/d/1Ejue9j_eugdCveuAJLtt5zJkvG5ZTkmlw0nsC3r_hqA/edit#gid=1974515149). This dictionary provides detailed descriptions of each field, ensuring clarity and consistency in data interpretation. You can also get the dictionary in the dictionary file in this repository.
 
 ### Tools
 
 We used a range of tools:
 
-Azure Cloud Sotrage:
-Python Anaconda: For Extraction and Transformation
-Azure Sinapse:
-Azure SQL Database: 
-SQL: For data loading
-DBSchema: For data modeling
-Tableu: For data serving
-Github: For project documentaiton
+- **Azure Cloud Storage**
+- **Python Anaconda:** For Extraction and Transformation
+- **Azure Synapse**
+- **Azure SQL Database** 
+- **SQL:** For data loading
+- **DBSchema:** For data modeling
+- **Tableau:** For data serving
+- **GitHub:** For project documentation
 
 ### Analysis Questions
+
 A tableau dashboard will be created with the goal to answer the following questions:
 
 - Total loan amount by companies
@@ -63,10 +80,10 @@ A tableau dashboard will be created with the goal to answer the following questi
 
 #### Project Structure
 
-1. **Data Scraping and Cloud Upload:** Write a Python script to scrape data from the source and save it in Azure cloud
+1. **Data Scraping and Cloud Upload:** Write a Python script to scrape data from the source and save it in Azure cloud storage.
 2. **Dimensional Modeling**
 3. **Data Pipeline/ETL:** Use SQL for data cleaning, formatting, and transformation.
-4. **Data Loading:** Load the cleaned data into a data warehouse and create a SQL view or connect it directly to Tableau
+4. **Data Loading:** Load the cleaned data into a data warehouse and create a SQL view or connect it directly to Tableau.
 
 ### Business Impact
 
@@ -97,7 +114,8 @@ A tableau dashboard will be created with the goal to answer the following questi
 - **Data Scientists and Analysts**: Individuals directly involved in data processing, analysis, and visualization.
 - **Public and Media**: For transparency and public knowledge, especially in understanding how public funds were utilized.
 
-### Dataset Size, Strengths, and Weaknesses:
+### Dataset Size, Strengths, and Weaknesses
+
 - **Size**: The dataset is extensive, covering a wide range of loans across various states and industries.
 - **Strengths**:
   - Comprehensive coverage of PPP loans.
@@ -106,25 +124,25 @@ A tableau dashboard will be created with the goal to answer the following questi
   - Potential gaps or inaccuracies in self-reported data.
   - The large size of the dataset may require significant computational resources for analysis.
   - Historical data may not fully predict future trends, especially in unprecedented scenarios like a pandemic.
- 
+
 ## ETL
- 
+
 ### Data Extraction / Storage
-- The datasets were sourced using a Web Scrapping with Python. The code is provided in the [Data Ingestion Python file]
+
+- The datasets were sourced using Web Scraping with Python. The code is provided in the [Data Ingestion Python file].
 - The data for this project is stored on Azure, ensuring secure and reliable access. You can find the data in our Azure storage container through the following link: [Azure Storage - Health Alliance Data](https://portal.azure.com/#view/Microsoft_Azure_Storage/ContainerMenuBlade/~/overview/storageAccountId/%2Fsubscriptions%2Ffb36820a-997c-4308-8686-5b46f22b0328%2FresourceGroups%2Fppp%2Fproviders%2FMicrosoft.Storage%2FstorageAccounts%2Fstcis4400projects/path/pppdata/etag/%220x8DBDED1E19A4458%22/defaultEncryptionScope/%24account-encryption-key/denyEncryptionScopeOverride~/false/defaultId//publicAccessVal/None).
 - Updated scripts for data ingestion are available in [ppp loans Data Ingestion storage.py](ppp%20loans%20Data%20Ingestion%20storage.py)
 
-- [ppp loans Data Ingenstion storage.py](https://github.com/Drummer05/Analysis-of-the-PPP-Loans/blob/main/ppp%20loans%20Data%20Ingenstion%20storage.py)
-
 ### Data Transformation
-- Once the datasets were succsesfully extracted and stored in our azure storage account, then we transformed the data to make sure it is realible, objective, and ready for analysis. Some of the data transformation techniques we performed were:
+
+- Once the datasets were successfully extracted and stored in our Azure storage account, we transformed the data to make sure it is reliable, objective, and ready for analysis. Some of the data transformation techniques we performed were:
   
-1. Remove Duplicates.
-2. Change the data type of some columns
-3. Check and treat null values.
-4. Estandarized column names.
-5. Estandarized string data values for some columns
-6. Create a year, month, day from date columns. 
+  1. Remove Duplicates.
+  2. Change the data type of some columns.
+  3. Check and treat null values.
+  4. Standardize column names.
+  5. Standardize string data values for some columns.
+  6. Create a year, month, day from date columns. 
 
 - Updated scripts for data transformation are available in  [Data Transformation PPP Loans.py](Data%20Transformation%20PPP%20Loans.py)
 
@@ -134,6 +152,5 @@ A tableau dashboard will be created with the goal to answer the following questi
 - [ppp loans Dimensional Modeling.png](ppp%20loans%20dimensional%20modeling.png)
 - Updated scripts for data loading are available in [Data Loading PPP Loans.txt](Data%20Loading%20PPP%20Loans.txt)
 
-### Tableau Dashboard
 
 
