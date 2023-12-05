@@ -22,6 +22,11 @@
 
 This Group Project is a comprehensive exercise in building a data warehouse and creating a robust data architecture. It encompasses the entire journey of data from sourcing to visualization, integrating aspects of data collection, storage, transformation, and presentation. This project requires both technical skills in handling and processing data and an understanding of effective data structuring (data architecture) and meaningful data presentation (data visualization). The goal is to develop a data pipeline following the architecture below. We looked at the PPP Loans Data.
 
+Group Members:
+Carlos Silverio 
+Tammie Celius
+Fulei Chen
+
 ![ppp loans](https://github.com/Drummer05/Analysis-of-the-PPP-Loans/assets/144565034/9eb6580d-b9d4-48ec-b3dc-0202d1e84c69)
 
 ### Background
@@ -80,10 +85,12 @@ A tableau dashboard will be created with the goal to answer the following questi
 
 #### Project Structure
 
-1. **Data Scraping and Cloud Upload:** Write a Python script to scrape data from the source and save it in Azure cloud storage.
-2. **Dimensional Modeling**
-3. **Data Pipeline/ETL:** Use SQL for data cleaning, formatting, and transformation.
-4. **Data Loading:** Load the cleaned data into a data warehouse and create a SQL view or connect it directly to Tableau.
+1. **Gather Requirements:** Gather the neccesary requirements to solve the problem.
+2. **Understand the Data:** Get familiarize with the datasets. Understand the columns.
+3. **Dimensional Modeling**: Create facts and dimensional tables
+4. **Data Scraping and Cloud Upload:** Write a Python script to scrape data from the source and save it in Azure cloud storage.
+5. **Data Pipeline/ETL:** Transport the data to anaconda python, where the data will be transformed.
+6. **Data Loading:** Create the facs and Dimensions table on Azure Synapse, then Load the cleaned data into the data warehouse, insert the data into the tables and finally connect azure synapse to Tableau for data visualizaiton.
 
 ### Business Impact
 
@@ -131,7 +138,7 @@ A tableau dashboard will be created with the goal to answer the following questi
 
 - The datasets were sourced using Web Scraping with Python. The code is provided in the [Data Ingestion Python file].
 - The data for this project is stored on Azure, ensuring secure and reliable access. You can find the data in our Azure storage container through the following link: [Azure Storage - Health Alliance Data](https://portal.azure.com/#view/Microsoft_Azure_Storage/ContainerMenuBlade/~/overview/storageAccountId/%2Fsubscriptions%2Ffb36820a-997c-4308-8686-5b46f22b0328%2FresourceGroups%2Fppp%2Fproviders%2FMicrosoft.Storage%2FstorageAccounts%2Fstcis4400projects/path/pppdata/etag/%220x8DBDED1E19A4458%22/defaultEncryptionScope/%24account-encryption-key/denyEncryptionScopeOverride~/false/defaultId//publicAccessVal/None).
-- Updated scripts for data ingestion are available in [ppp loans Data Ingestion storage.py](ppp%20loans%20Data%20Ingestion%20storage.py)
+- Updated scripts for data ingestion are available in [ppp loans Data Ingenstion storage.py](https://github.com/Drummer05/Analysis-of-the-PPP-Loans/blob/main/ppp%20loans%20Data%20Ingenstion%20storage.py)
 
 ### Data Transformation
 
