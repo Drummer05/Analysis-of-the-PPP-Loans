@@ -27,6 +27,8 @@ If you want to access the source of the data for this project, please click on t
 - [Paycheck Protection Program (PPP) Data](https://data.sba.gov/dataset/ppp-foia)
 - [North American Industry Classification System (NAICS)](https://www.census.gov/naics/)
 
+Data Dictionary: [2022 NAICS Title](https://docs.google.com/spreadsheets/d/1Ejue9j_eugdCveuAJLtt5zJkvG5ZTkmlw0nsC3r_hqA/edit#gid=1974515149)
+
 ### Analysis Questions
 A tableau dashboard will be created with the goal to answer the following questions:
 
