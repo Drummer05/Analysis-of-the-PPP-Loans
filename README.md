@@ -2,7 +2,8 @@
 
 ## Introduction
 
-This Group Project is a comprehensive exercise in building a data warehouse and creating a robust data architecture. It encompasses the entire journey of data from sourcing to visualization, integrating aspects of data collection, storage, transformation, and presentation. This project requires both technical skills in handling and processing data and an understanding of effective data structuring (data architecture) and meaningful data presentation (data visualization).
+This Group Project is a comprehensive exercise in building a data warehouse and creating a robust data architecture. It encompasses the entire journey of data from sourcing to visualization, integrating aspects of data collection, storage, transformation, and presentation. This project requires both technical skills in handling and processing data and an understanding of effective data structuring (data architecture) and meaningful data presentation (data visualization). The goal is to develop a data pipleine following the architecture bellow. We looked at the PPP Loans Data
+
 
 ### Background
 
@@ -28,6 +29,19 @@ If you want to access the source of the data for this project, please click on t
 - [North American Industry Classification System (NAICS)](https://www.census.gov/naics/)
 
 - For a comprehensive understanding of the data fields used in this project, please refer to our [2022 NAICS Title](https://docs.google.com/spreadsheets/d/1Ejue9j_eugdCveuAJLtt5zJkvG5ZTkmlw0nsC3r_hqA/edit#gid=1974515149). This dictionary provides detailed descriptions of each field, ensuring clarity and consistency in data interpretation. You can also get the dictionary in the dictionary file in this repository
+
+### Tools
+
+We used a range of tools:
+
+Azure Cloud Sotrage:
+Python Anaconda: For Extraction and Transformation
+Azure Sinapse:
+Azure SQL Database: 
+SQL: For data loading
+DBSchema: For data modeling
+Tableu: For data serving
+Github: For project documentaiton
 
 ### Analysis Questions
 A tableau dashboard will be created with the goal to answer the following questions:
