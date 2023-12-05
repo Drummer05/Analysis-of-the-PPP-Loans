@@ -29,8 +29,6 @@ If you want to access the source of the data for this project, please click on t
 
 - For a comprehensive understanding of the data fields used in this project, please refer to our [2022 NAICS Title](https://docs.google.com/spreadsheets/d/1Ejue9j_eugdCveuAJLtt5zJkvG5ZTkmlw0nsC3r_hqA/edit#gid=1974515149). This dictionary provides detailed descriptions of each field, ensuring clarity and consistency in data interpretation. You can also get the dictionary in the dictionary file in this repository
 
-Data Dictionary: [2022 NAICS Title](https://docs.google.com/spreadsheets/d/1Ejue9j_eugdCveuAJLtt5zJkvG5ZTkmlw0nsC3r_hqA/edit#gid=1974515149)
-
 ### Analysis Questions
 A tableau dashboard will be created with the goal to answer the following questions:
 
@@ -99,8 +97,7 @@ A tableau dashboard will be created with the goal to answer the following questi
 - The data for this project is stored on Azure, ensuring secure and reliable access. You can find the data in our Azure storage container through the following link: [Azure Storage - Health Alliance Data](https://portal.azure.com/#view/Microsoft_Azure_Storage/ContainerMenuBlade/~/overview/storageAccountId/%2Fsubscriptions%2Ffb36820a-997c-4308-8686-5b46f22b0328%2FresourceGroups%2Fppp%2Fproviders%2FMicrosoft.Storage%2FstorageAccounts%2Fstcis4400projects/path/pppdata/etag/%220x8DBDED1E19A4458%22/defaultEncryptionScope/%24account-encryption-key/denyEncryptionScopeOverride~/false/defaultId//publicAccessVal/None).
 - Updated scripts for data ingestion are available in [ppp loans Data Ingestion storage.py](ppp%20loans%20Data%20Ingestion%20storage.py)
 
-- [Data Transformation PPP Loans.py](https://github.com/Drummer05/Analysis-of-the-PPP-Loans/blob/main/Data%20Transformation%20PPP%20Loans.py)
-
+[Data Transformation PPP Loans.py](https://github.com/Drummer05/Analysis-of-the-PPP-Loans/blob/main/Data%20Transformation%20PPP%20Loans.py)
 
 ### Data Transformation
 - Once the datasets were succsesfully extracted and stored in our azure storage account, then we transformed the data to make sure it is realible, objective, and ready for analysis. Some of the data transformation techniques we performed were:
