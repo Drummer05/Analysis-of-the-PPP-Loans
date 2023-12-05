@@ -5,6 +5,9 @@
 This Group Project is a comprehensive exercise in building a data warehouse and creating a robust data architecture. It encompasses the entire journey of data from sourcing to visualization, integrating aspects of data collection, storage, transformation, and presentation. This project requires both technical skills in handling and processing data and an understanding of effective data structuring (data architecture) and meaningful data presentation (data visualization). The goal is to develop a data pipleine following the architecture bellow. We looked at the PPP Loans Data
 
 
+![ppp loans](https://github.com/Drummer05/Analysis-of-the-PPP-Loans/assets/144565034/9eb6580d-b9d4-48ec-b3dc-0202d1e84c69)
+
+
 ### Background
 
 The Paycheck Protection Program (PPP) is a U.S. government initiative designed to help small businesses during times of economic hardship such as the COVID-19 pandemic. Initiated during the Trump administration in 2020, the PPP provides loans to small businesses to cover essential expenses like employee salaries, rent, mortgage payments, and utilities. The key feature of these loans is their potential for forgiveness, encouraging businesses to use the funds for these approved expenses.
