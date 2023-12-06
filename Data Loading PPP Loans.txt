@@ -1,7 +1,7 @@
 -- Fact Tables
  
 -- Loan Facts
-CREATE TABLE ppploansql.dbo.Loan_Facts (
+CREATE TABLE sqlppploan.dbo.Loan_Facts (
 	Loan_Number INT PRIMARY KEY NONCLUSTERED NOT ENFORCED,
 	BorrowerID INT NULL,
 	LoanStatusID INT NULL,
@@ -27,7 +27,7 @@ CREATE TABLE ppploansql.dbo.Loan_Facts (
 -- Dimension Tables
  
 -- Borrower Dimension
-CREATE TABLE ppploansql.dbo.Borrower_Dim (
+CREATE TABLE sqlppploan.dbo.Borrower_Dim (
 	BorrowerID INT PRIMARY KEY NONCLUSTERED NOT ENFORCED,
 	Borrower_Name VARCHAR(255) NULL,
 	Borrower_Address VARCHAR(255) NULL,
@@ -39,22 +39,22 @@ CREATE TABLE ppploansql.dbo.Borrower_Dim (
 );
  
 -- Business Type Dimension
-CREATE TABLE ppploansql.dbo.Business_Type_Dim (
+CREATE TABLE sqlppploan.dbo.Business_Type_Dim (
 	BusinessTypeID INT PRIMARY KEY NONCLUSTERED NOT ENFORCED,
 	Business_Type NVARCHAR(255) NULL,
 	Business_Age_Description NVARCHAR(255) NULL
 );
  
 -- Lender Dimension
-CREATE TABLE ppploansql.dbo.Lender_Dim (
+CREATE TABLE sqlppploan.dbo.Lender_Dim (
 	LenderID INT PRIMARY KEY NONCLUSTERED NOT ENFORCED,
-      Servicing_Lender_Location_ID INT NULL,
+    Servicing_Lender_Location_ID INT NULL,
 	Servicing_Lender_Name NVARCHAR(255) NULL,
 	Servicing_Lender_Address NVARCHAR(255) NULL,
 	Servicing_Lender_City NVARCHAR(255) NULL,
 	Servicing_Lender_State NVARCHAR(255) NULL,
 	Servicing_Lender_Zip NVARCHAR(255) NULL,
-        Originating_Lender_Location_ID INT NULL,
+    Originating_Lender_Location_ID INT NULL,
 	Originating_Lender NVARCHAR(255) NULL,
 	Originating_Lender_City NVARCHAR(255) NULL,
 	Originating_Lender_State NVARCHAR(255) NULL,
@@ -63,14 +63,14 @@ CREATE TABLE ppploansql.dbo.Lender_Dim (
 );
  
 -- Loan Status Dimension
-CREATE TABLE ppploansql.dbo.Loan_Status_Dim (
+CREATE TABLE sqlppploan.dbo.Loan_Status_Dim (
 	LoanStatusID INT PRIMARY KEY NONCLUSTERED NOT ENFORCED,
 	Loan_Status NVARCHAR(255) NULL,
 	Term INT NULL
 );
  
 -- Location Dimension
-CREATE TABLE ppploansql.dbo.Location_Dim (
+CREATE TABLE sqlppploan.dbo.Location_Dim (
 	LocationID INT PRIMARY KEY NONCLUSTERED NOT ENFORCED,
 	Project_City NVARCHAR(255) NULL,
 	Project_County_Name VARCHAR(255) NULL,
@@ -80,35 +80,35 @@ CREATE TABLE ppploansql.dbo.Location_Dim (
 );
  
 -- Naics Dimension
-CREATE TABLE ppploansql.dbo.Naics_Dim (
+CREATE TABLE sqlppploan.dbo.Naics_Dim (
 	NaicsCode INT PRIMARY KEY NONCLUSTERED NOT ENFORCED,
 	[2022_Naics_Sector]  varchar(250) NULL
     
 );
  
 -- Date Dimension
-CREATE TABLE ppploansql.dbo.Date_Dim (
+CREATE TABLE sqlppploan.dbo.Date_Dim (
 	LoanNumberID INT PRIMARY KEY NONCLUSTERED NOT ENFORCED,
 	Date_Approved DATETIME NULL,
-        Date_Approved_Day INT NULL,
+    Date_Approved_Day INT NULL,
 	Date_Approved_Month INT NULL,
 	Date_Approved_Year INT NULL,
-        Loan_Status_Date DATETIME NULL,
+    Loan_Status_Date DATETIME NULL,
 	Loan_Status_Date_Day INT NULL,
 	Loan_Status_Date_Month INT NULL,
 	Loan_Status_Date_Year INT NULL,
 	Forgiveness_Date DATETIME NULL,
-        Forgiveness_Date_Day INT NULL,
+    Forgiveness_Date_Day INT NULL,
 	Forgiveness_Date_Month INT NULL,
 	Forgiveness_Date_Year INT NULL
 );
  
 -- Select statements to view the created tables
-SELECT * FROM ppploansql.dbo.Loan_Facts
-SELECT * FROM ppploansql.dbo.Borrower_Dim;
-SELECT * FROM ppploansql.dbo.Business_Type_Dim;
-SELECT * FROM ppploansql.dbo.Lender_Dim;
-SELECT * FROM ppploansql.dbo.Loan_Status_Dim;
-SELECT * FROM ppploansql.dbo.Location_Dim;
-SELECT * FROM ppploansql.dbo.Naics_Dim;
-SELECT * FROM ppploansql.dbo.Date_Dim;
+SELECT * FROM sqlppploan.dbo.Loan_Facts
+SELECT * FROM sqlppploan.dbo.Borrower_Dim;
+SELECT * FROM sqlppploan.dbo.Business_Type_Dim;
+SELECT * FROM sqlppploan.dbo.Lender_Dim;
+SELECT * FROM sqlppploan.dbo.Loan_Status_Dim;
+SELECT * FROM sqlppploan.dbo.Location_Dim;
+SELECT * FROM sqlppploan.dbo.Naics_Dim;
+SELECT * FROM sqlppploan.dbo.Date_Dim;
