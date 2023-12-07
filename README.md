@@ -91,7 +91,7 @@ A tableau dashboard will be created with the goal to answer the following questi
 3. **Dimensional Modeling**: Create facts and dimensional tables
 4. **Data Scraping and Cloud Upload:** Write a Python script to scrape data from the source and save it in Azure cloud storage.
 5. **Data Pipeline/ETL:** Transport the data to anaconda python, where the data will be transformed.
-6. **Data Loading:** Create the facs and Dimensions table on Azure Synapse, then Load the cleaned data into the data warehouse, insert the data into the tables and finally connect azure synapse to Tableau for data visualizaiton.
+6. **Data Loading:** Create the facts and Dimensions table on Azure Synapse, then Load the cleaned data into the data warehouse, insert the data into the tables and finally connect azure synapse to Tableau for data visualizaiton.
 
 ### Business Impact
 
