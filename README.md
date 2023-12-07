@@ -161,6 +161,7 @@ A tableau dashboard will be created with the goal to answer the following questi
 
 ### Tableau Dashboard
 - Tableau Dashboard: https://public.tableau.com/app/profile/carlos.silveio/viz/Book2_17019077623510/Dashboard3
+- Here is the link of our presentation slides: https://docs.google.com/presentation/d/1lsZYntDNpIC_iCDW7zth2UtaD03OXn3dhe441ZIhD_E/edit#slide=id.p
 
 
 
