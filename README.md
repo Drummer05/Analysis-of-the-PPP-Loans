@@ -66,7 +66,7 @@ We used a range of tools:
 - **DBSchema:** For data modeling
 - **Tableau:** For data serving
 - **GitHub:** For project documentation
-- **Google Colab** For writing and executing Python code
+- **Google Colab:** For writing and executing Python code
 
 ### Analysis Questions
 
