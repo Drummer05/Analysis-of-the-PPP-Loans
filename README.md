@@ -150,7 +150,10 @@ A tableau dashboard will be created with the goal to answer the following questi
   3. Check and treat null values.
   4. Standardize column names.
   5. Standardize string data values for some columns.
-  6. Create a year, month, day from date columns. 
+  6. Create a year, month, day from date columns.
+  7. Appending 2022 NAICS to a new column named 2022_Naics_Sector.
+  8. Creating unique IDs for BorrowerID, LoactionID, LenderID, BusinessTypeID, and LoanStatusID.
+  9. Removing special characters.
 
 - Updated scripts for data transformation are available in  [Data Transformation PPP Loans.py](Data%20Transformation%20PPP%20Loans.py)
 
