@@ -159,5 +159,8 @@ A tableau dashboard will be created with the goal to answer the following questi
 - [ppp loans Dimensional Modeling.png](ppp%20loans%20dimensional%20modeling.png)
 - Updated scripts for data loading are available in [Data Loading PPP Loans.txt](Data%20Loading%20PPP%20Loans.txt)
 
+### Tableau Dashboard
+- Tableau Dashboard: https://public.tableau.com/app/profile/carlos.silveio/viz/Book2_17019077623510/Dashboard3
+
 
 
